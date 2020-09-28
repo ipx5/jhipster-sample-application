@@ -1,0 +1,29 @@
+
+entity Cd {
+	name String required,
+    performer String,
+    releaseYear String,
+    diskCount String,
+    medium String,
+    label String,
+    state State,
+    added Instant
+}
+
+entity Dvd {
+	name String required,
+    releaseYear String,
+    diskCount String,
+    format String,
+    lang String,
+    state State,
+    added Instant
+}
+
+enum State {
+	OK, AWAY, LOST, EXPECTED, UNDEFINED
+}
+
+paginate Cd, Dvd with pagination
+
+service all with serviceImpl
