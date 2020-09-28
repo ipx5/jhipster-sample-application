@@ -1,0 +1,54 @@
+{
+  "name": "Cd",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "performer",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "releaseYear",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "diskCount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "medium",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "label",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "state",
+      "fieldType": "State",
+      "fieldValues": "OK,AWAY,LOST,EXPECTED,UNDEFINED"
+    },
+    {
+      "fieldName": "added",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20200928090031",
+  "entityTableName": "cd",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "jhipsterSampleApplication",
+  "applications": "*",
+  "microserviceName": "jhipsterSampleApplication"
+}
